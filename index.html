@@ -1,79 +1,186 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#F5F3EF">
-  <title>Avaliação TEA | Psiquiatria Especializada</title>
-  <style>
-    body {
-      background-color: #F5F3EF;
-      color: #1a1a1a;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
-    header {
-      padding: 40px 10%;
-      border-bottom: 1px solid #e0ddd5;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo {
-      font-weight: bold;
-      letter-spacing: 2px;
-      font-size: 1.2rem;
-    }
-    h1, h2 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 400;
-      color: #111;
-    }
-    .hero {
-      padding: 120px 10%;
-      max-width: 800px;
-    }
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      line-height: 1.1;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      color: #4a4a4a;
-      margin-bottom: 50px;
-      max-width: 600px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 16px 32px;
-      background-color: #1a1a1a;
-      color: #F5F3EF;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-      letter-spacing: 1.5px;
-      transition: background-color 0.3s ease;
-    }
-    .btn:hover {
-      background-color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psiquiatra em Casa - Atendimento Imediato</title>
+    <style>
+        :root {
+            --bg-color: #050505;
+            --text-color: #e0e0e0;
+            --accent-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-family: "Times New Roman", Times, serif;
+            font-size: 52px;
+            font-weight: normal;
+            color: var(--accent-color);
+            margin: 0;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 760px;
+            padding: 60px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--accent-color);
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+
+        ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            border: 1px solid #333;
+            padding: 30px;
+            margin: 40px 0;
+            background-color: #0f0f0f;
+            border-left: 4px solid #fff;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 22px;
+            background-color: var(--accent-color);
+            color: #000000;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 2px;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            background-color: #d4d4d4;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+            .logo {
+                font-size: 40px;
+            }
+            p, li, .highlight-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="logo">SEU LOGO</div>
-    <div class="crm-info">CRM 00000 | RQE 0000</div>
-  </header>
+    <header class="header">
+        <h2 class="logo">A</h2>
+    </header>
 
-  <section class="hero">
-    <h1>Avaliação Diagnóstica de TEA</h1>
-    <p>Um processo psiquiátrico rigoroso, empático e resolutivo. Avaliação clínica completa e emissão de laudo técnico especializado no mesmo dia.</p>
-    <a href="#" class="btn">Agendar Avaliação</a>
-  </section>
+    <main class="container">
+        <h1>SEJA ATENDIDO AINDA HOJE POR UM PSIQUIATRA DE VERDADE. SEM SAIR DE CASA.</h1>
+
+        <div class="highlight-box">
+            <p><strong>Um compromisso inegociável:</strong> Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
+        </div>
+
+        <p>Se você está enfrentando insônia crônica, ansiedade paralisante ou os sinais silenciosos da depressão, o último conselho que você precisa é de um influenciador digital.</p>
+
+        <p>O consumidor não é tolo. Mas a popularização da saúde mental na internet criou um perigo real: a ilusão da competência. Hoje, pessoas munidas de carisma, um curso de final de semana e uma boa iluminação de estúdio estão diagnosticando e prescrevendo mudanças de vida como se fossem tratamentos médicos.</p>
+
+        <p>O resultado desta irresponsabilidade? Pacientes perdem tempo, perdem dinheiro e, o mais trágico, perdem a esperança de que um tratamento real possa funcionar. A psiquiatria não é um espetáculo de engajamento. É ciência médica pura.</p>
+
+        <h2>O teste definitivo: As três letras que separam a medicina do palco.</h2>
+
+        <p>Na publicidade, nós exigimos fatos. Na medicina, você deve exigir o RQE.</p>
+
+        <p>O Registro de Qualificação de Especialidade (RQE) não é um detalhe burocrático. É a prova matemática e legal de que o profissional à sua frente investiu seis anos em uma faculdade de medicina, completou anos de uma residência médica exaustiva em hospitais psiquiátricos e foi rigorosamente testado pelos seus pares.</p>
+
+        <p>Um psiquiatra com RQE não adivinha. Ele não oferece "mentorias de bem-estar". Ele diagnostica com base em fisiologia, neuroquímica e evidências clínicas. Como <strong>toda a equipe é psiquiatra de verdade</strong>, o rigor é absoluto. Se o profissional não possui este registro, ele não é um psiquiatra. É simples assim.</p>
+
+        <h2>A cura para a sala de espera.</h2>
+
+        <p>A dor mental não agenda horário para o mês que vem. Quando a crise ataca, você precisa de um médico agora, não daqui a sessenta dias.</p>
+
+        <p>Foi exatamente para resolver este problema crônico que desenvolvemos este serviço de telemedicina psiquiátrica imediata. O funcionamento é notavelmente simples, direto e eficaz:</p>
+
+        <ul>
+            <li><strong>Acesso Imediato e Nacional:</strong> Você solicita o atendimento de onde estiver, em qualquer lugar do Brasil, sem enfrentar trânsito ou salas de espera constrangedoras.</li>
+            <li><strong>Apenas Especialistas Comprovados:</strong> Toda a nossa equipe é psiquiatra de verdade. Você é conectado, por videochamada, exclusivamente a um médico com RQE verificado. Zero amadores.</li>
+            <li><strong>Resolução Completa:</strong> Você recebe um diagnóstico ético. Caso necessário, a prescrição médica digital (válida em qualquer farmácia do país) e os atestados são enviados diretamente para o seu celular.</li>
+        </ul>
+
+        <p>Tudo isso com o absoluto sigilo que o seu próprio quarto ou escritório oferecem.</p>
+
+        <p>Não arrisque a sua mente e a sua vida com conselheiros de internet. O tratamento sério, conduzido por médicos de verdade, está a um clique de distância.</p>
+
+        <a href="https://wa.me/seunumerodewhatsapp" class="cta-button">Agendar Consulta com Especialista Agora</a>
+    </main>
 
 </body>
 </html>
