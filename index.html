@@ -6,140 +6,136 @@
     <title>Psiquiatra em Casa - Atendimento Imediato</title>
     <style>
         :root {
-            /* Paleta Quiet Luxury: Off-white elegante, carvão escuro e contrastes sutis */
-            --bg-color: #f4f3ef; 
-            --text-color: #333333;
-            --heading-color: #1a1a1a;
-            --border-color: #d1cfc7;
+            --text-color: #f0f0f0;
+            --accent-color: #ffffff;
         }
         
         body {
-            background-color: var(--bg-color);
+            /* Fundo com a imagem e uma leve camada escura para garantir a leitura do texto */
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('azul-lindo.jpg') no-repeat center center fixed;
+            background-size: cover;
             color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            line-height: 1.8;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
-            letter-spacing: 0.3px;
         }
 
         .container {
-            max-width: 720px;
-            padding: 100px 20px 80px 20px;
+            max-width: 760px;
+            padding: 80px 20px 60px 20px;
             width: 100%;
             box-sizing: border-box;
         }
 
         .hook-phrase {
-            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
-            font-size: 26px;
+            font-size: 24px;
             font-style: italic;
             text-align: center;
-            color: var(--heading-color);
-            margin-bottom: 60px;
-            font-weight: 400;
+            color: var(--accent-color);
+            margin-bottom: 50px;
+            font-weight: 500;
             line-height: 1.4;
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
         }
 
         h1 {
-            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
-            font-size: 34px;
-            line-height: 1.3;
+            font-size: 38px;
+            line-height: 1.2;
             margin-bottom: 40px;
-            font-weight: normal;
+            font-weight: 700;
             text-align: center;
-            color: var(--heading-color);
-            letter-spacing: -0.5px;
+            color: var(--accent-color);
+            text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
         }
 
         h2 {
-            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
             font-size: 24px;
-            margin-top: 60px;
+            margin-top: 50px;
             margin-bottom: 20px;
-            font-weight: normal;
-            color: var(--heading-color);
+            font-weight: 600;
+            color: var(--accent-color);
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
 
         p {
-            font-size: 17px;
-            margin-bottom: 24px;
-            color: var(--text-color);
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #eaeaea;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
 
         ul {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             padding-left: 20px;
         }
 
         li {
-            font-size: 17px;
-            margin-bottom: 16px;
-            color: var(--text-color);
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #eaeaea;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
         }
 
         strong {
-            color: var(--heading-color);
-            font-weight: 500;
+            color: var(--accent-color);
+            font-weight: 600;
         }
 
         .highlight-box {
-            border-top: 1px solid var(--border-color);
-            border-bottom: 1px solid var(--border-color);
-            padding: 40px 0;
-            margin: 50px 0;
-            background-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            margin: 40px 0;
+            background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente escuro */
+            backdrop-filter: blur(4px); /* Efeito de vidro borrado no fundo */
+            border-left: 4px solid #fff;
+            border-radius: 4px;
         }
         
         .highlight-box p {
             margin: 0;
-            font-size: 18px;
-            color: var(--heading-color);
-            font-weight: 400;
-            text-align: center;
-            font-style: italic;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+            text-shadow: none; /* Removido o brilho extra aqui por causa do fundo da caixa */
         }
 
         .cta-button {
             display: block;
             width: 100%;
-            max-width: 400px;
-            margin: 80px auto 0 auto;
-            padding: 20px;
-            background-color: var(--heading-color);
-            color: #ffffff;
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 22px;
+            background-color: var(--accent-color);
+            color: #000000;
             text-align: center;
             text-decoration: none;
-            font-size: 13px;
-            font-weight: 400;
-            border-radius: 0; /* Bordas retas, corte de alfaiataria */
-            border: 1px solid var(--heading-color);
-            transition: all 0.4s ease;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
 
         .cta-button:hover {
-            background-color: transparent;
-            color: var(--heading-color);
+            background-color: #d4d4d4;
+            transform: translateY(-2px);
         }
 
         @media (max-width: 600px) {
             .hook-phrase {
-                font-size: 22px;
+                font-size: 20px;
             }
             h1 {
                 font-size: 28px;
             }
-            p, li {
+            p, li, .highlight-box p {
                 font-size: 16px;
-            }
-            .highlight-box p {
-                font-size: 17px;
             }
         }
     </style>
@@ -156,7 +152,7 @@
         <h1>Seja atendido ainda hoje por um psiquiatra de verdade. Sem sair de casa.</h1>
 
         <div class="highlight-box">
-            <p>Um compromisso inegociável: Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
+            <p><strong>Um compromisso inegociável:</strong> Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
         </div>
 
         <p>Se você está enfrentando insônia crônica, ansiedade paralisante ou depressão, você precisa de um psiquiatra de verdade, não de um "especialista em saúde mental" ou um "especialista em psiquiatria".</p>
