@@ -1,304 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Psiquiatra em Casa | Atendimento Psiquiátrico Imediato</title>
-
-<style>
-
-:root{
-    --text:#f2f2f2;
-    --white:#fff;
-}
-
-body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    color:var(--text);
-
-    background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
-    url("azul-lindo.jpg") center/cover fixed;
-}
-
-.container{
-
-    max-width:760px;
-    margin:auto;
-    padding:80px 24px;
-}
-
-.hook{
-
-    font-size:22px;
-    font-style:italic;
-    text-align:center;
-    margin-bottom:35px;
-    color:white;
-}
-
-h1{
-
-    font-size:42px;
-    line-height:1.2;
-    text-align:center;
-    margin-bottom:20px;
-    color:white;
-}
-
-.cta{
-
-display:block;
-
-max-width:430px;
-
-margin:40px auto;
-
-padding:22px;
-
-background:white;
-
-color:black;
-
-text-decoration:none;
-
-text-align:center;
-
-font-weight:700;
-
-font-size:18px;
-
-border-radius:4px;
-
-letter-spacing:.5px;
-
-transition:.2s;
-}
-
-.cta:hover{
-
-transform:translateY(-2px);
-
-}
-
-.highlight{
-
-margin:50px 0;
-
-padding:28px;
-
-border-left:4px solid white;
-
-background:rgba(0,0,0,.35);
-
-backdrop-filter:blur(5px);
-
-}
-
-.highlight p{
-
-margin:0;
-
-font-size:20px;
-
-color:white;
-
-}
-
-h2{
-
-margin-top:60px;
-
-font-size:28px;
-
-color:white;
-
-}
-
-p{
-
-font-size:18px;
-
-line-height:1.8;
-
-margin-bottom:22px;
-
-}
-
-.steps{
-
-margin:40px 0;
-
-padding:0;
-
-list-style:none;
-
-}
-
-.steps li{
-
-margin-bottom:18px;
-
-font-size:18px;
-
-}
-
-.steps strong{
-
-display:block;
-
-font-size:19px;
-
-color:white;
-
-margin-bottom:4px;
-
-}
-
-@media(max-width:600px){
-
-h1{
-
-font-size:31px;
-
-}
-
-.hook{
-
-font-size:19px;
-
-}
-
-p,.steps li{
-
-font-size:16px;
-
-}
-
-}
-
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psiquiatra em Casa - Atendimento Imediato</title>
+    <style>
+        :root {
+            /* Fundo Azul Petróleo */
+            --bg-color: #0a2d39; 
+            --text-color: #e0e0e0;
+            --accent-color: #ffffff;
+        }
+        
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 760px;
+            padding: 80px 20px 60px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .hook-phrase {
+            font-size: 24px;
+            font-style: italic;
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 50px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--accent-color);
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #d1dbdf;
+        }
+
+        ul {
+            margin-bottom: 30px;
+            padding-left: 20px;
+        }
+
+        li {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #d1dbdf;
+        }
+
+        strong {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        .highlight-box {
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            margin: 40px 0;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-left: 4px solid #fff;
+            border-radius: 4px;
+        }
+        
+        .highlight-box p {
+            margin: 0;
+            font-size: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            display: block;
+            width: 100%;
+            max-width: 450px;
+            margin: 60px auto;
+            padding: 22px;
+            background-color: var(--accent-color);
+            color: #000000;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #d4d4d4;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .hook-phrase {
+                font-size: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            p, li, .highlight-box p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<main class="container">
+    <main class="container">
+        
+        <div class="hook-phrase">
+            "Você entraria num avião em que o piloto aprendeu a voar apenas lendo um livro?"
+        </div>
 
-<div class="hook">
+        <h1>Seja atendido ainda hoje por um psiquiatra de verdade. Sem sair de casa.</h1>
 
-"Você entraria em um avião cujo piloto aprendeu a voar apenas lendo um livro?"
+        <div class="highlight-box">
+            <p><strong>Um compromisso inegociável:</strong> Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
+        </div>
 
-</div>
+        <p>Se você está enfrentando insônia crônica, ansiedade paralisante ou depressão, você precisa de um psiquiatra de verdade, não de um "especialista em saúde mental" ou um "especialista em psiquiatria".</p>
 
-<h1>
+        <p>O consumidor não é tolo. Mas a popularização da saúde mental na internet criou um perigo real: a ilusão da competência. Hoje, pessoas munidas de carisma, um curso de final de semana e uma boa iluminação de estúdio mas completamente despreparadas estão diagnosticando e prescrevendo.</p>
 
-Seja atendido ainda hoje por um psiquiatra de verdade.<br>
-Sem sair de casa.
+        <p>O resultado desta irresponsabilidade? Pacientes perdem tempo, perdem dinheiro e, o mais trágico, perdem a esperança de que um tratamento real possa funcionar. A psiquiatria não é um espetáculo de redes sociais. É ciência médica.</p>
 
-</h1>
+        <h2>O teste definitivo: As três letras que separam a medicina do palco.</h2>
 
-<a class="cta"
-href="https://wa.me/5511977335683?text=OL%C3%81%2C%20DESEJO%20AGENDAR%20ATENDIMENTO">
+        <p>Na medicina, você deve exigir o RQE.</p>
 
-AGENDAR CONSULTA AGORA
+        <p>O Registro de Qualificação de Especialidade (RQE) não é um detalhe burocrático. É a prova matemática e legal de que o profissional à sua frente investiu seis anos em uma faculdade de medicina, completou anos de uma residência médica exaustiva em hospitais psiquiátricos e foi rigorosamente preparado.</p>
 
-</a>
-
-<div class="highlight">
-
-<p>
-
-<strong>Compromisso inegociável:</strong>
-
-Toda a equipe é formada exclusivamente por médicos psiquiatras com Registro de Qualificação de Especialidade (RQE) ativo.
-
-Sem exceções.
-
-</p>
-
-</div>
-
-<p>
-
-Ansiedade intensa, insônia, depressão e crises emocionais exigem avaliação médica adequada. O tratamento começa com um diagnóstico correto, realizado por quem foi treinado durante anos para isso.
-
-</p>
-
-<p>
-
-Hoje existe muita informação sobre saúde mental, mas informação não substitui formação médica. Antes de iniciar qualquer tratamento, confirme se o profissional possui RQE em Psiquiatria.
-
-</p>
-
-<h2>
-
-Como funciona
-
-</h2>
-
-<ul class="steps">
-
-<li>
-
-<strong>1. Solicite o atendimento</strong>
-
-Clique no botão e fale conosco pelo WhatsApp.
-
-</li>
-
-<li>
-
-<strong>2. Consulte um psiquiatra com RQE</strong>
-
-Você realiza a consulta por vídeo, de qualquer lugar do Brasil.
-
-</li>
-
-<li>
-
-<strong>3. Receba todo o tratamento</strong>
-
-Receita digital, atestados e demais documentos são enviados diretamente para você, quando indicados.
-
-</li>
-
-</ul>
-
-<h2>
-
-Por que exigir RQE?
-
-</h2>
-
-<p>
-
-O Registro de Qualificação de Especialidade comprova que o médico concluiu sua formação em Psiquiatria e está oficialmente habilitado para exercer a especialidade.
-
-</p>
-
-<p>
-
-Quando se trata da sua saúde mental, essa diferença importa.
-
-</p>
-
-<p>
-
-Você merece ser atendido por um médico preparado, com segurança, sigilo e responsabilidade.
-
-</p>
-
-<a class="cta"
-href="https://wa.me/5511977335683?text=OL%C3%81%2C%20DESEJO%20AGENDAR%20ATENDIMENTO">
-
-QUERO FALAR COM UM PSIQUIATRA
-
-</a>
-
-</main>
-
-</body>
-</html>
+        <p>Um psiquiatra com RQE não adivinha. Ele não oferece "mentorias de
