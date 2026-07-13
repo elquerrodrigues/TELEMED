@@ -6,129 +6,140 @@
     <title>Psiquiatra em Casa - Atendimento Imediato</title>
     <style>
         :root {
-            /* Fundo Azul Petróleo */
-            --bg-color: #0a2d39; 
-            --text-color: #e0e0e0;
-            --accent-color: #ffffff;
+            /* Paleta Quiet Luxury: Off-white elegante, carvão escuro e contrastes sutis */
+            --bg-color: #f4f3ef; 
+            --text-color: #333333;
+            --heading-color: #1a1a1a;
+            --border-color: #d1cfc7;
         }
         
         body {
             background-color: var(--bg-color);
             color: var(--text-color);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             align-items: center;
+            letter-spacing: 0.3px;
         }
 
         .container {
-            max-width: 760px;
-            padding: 80px 20px 60px 20px;
+            max-width: 720px;
+            padding: 100px 20px 80px 20px;
             width: 100%;
             box-sizing: border-box;
         }
 
         .hook-phrase {
-            font-size: 24px;
+            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
+            font-size: 26px;
             font-style: italic;
             text-align: center;
-            color: var(--accent-color);
-            margin-bottom: 50px;
-            font-weight: 500;
+            color: var(--heading-color);
+            margin-bottom: 60px;
+            font-weight: 400;
             line-height: 1.4;
         }
 
         h1 {
-            font-size: 38px;
-            line-height: 1.2;
+            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
+            font-size: 34px;
+            line-height: 1.3;
             margin-bottom: 40px;
-            font-weight: 700;
+            font-weight: normal;
             text-align: center;
-            color: var(--accent-color);
+            color: var(--heading-color);
+            letter-spacing: -0.5px;
         }
 
         h2 {
+            font-family: "Didot", "Bodoni MT", "Times New Roman", Times, serif;
             font-size: 24px;
-            margin-top: 50px;
+            margin-top: 60px;
             margin-bottom: 20px;
-            font-weight: 600;
-            color: var(--accent-color);
+            font-weight: normal;
+            color: var(--heading-color);
         }
 
         p {
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #d1dbdf;
+            font-size: 17px;
+            margin-bottom: 24px;
+            color: var(--text-color);
         }
 
         ul {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
             padding-left: 20px;
         }
 
         li {
-            font-size: 18px;
-            margin-bottom: 15px;
-            color: #d1dbdf;
+            font-size: 17px;
+            margin-bottom: 16px;
+            color: var(--text-color);
         }
 
         strong {
-            color: var(--accent-color);
-            font-weight: 600;
+            color: var(--heading-color);
+            font-weight: 500;
         }
 
         .highlight-box {
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            padding: 30px;
-            margin: 40px 0;
-            background-color: rgba(0, 0, 0, 0.25);
-            border-left: 4px solid #fff;
-            border-radius: 4px;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 40px 0;
+            margin: 50px 0;
+            background-color: transparent;
         }
         
         .highlight-box p {
             margin: 0;
-            font-size: 20px;
-            color: #fff;
-            font-weight: 500;
+            font-size: 18px;
+            color: var(--heading-color);
+            font-weight: 400;
+            text-align: center;
+            font-style: italic;
         }
 
         .cta-button {
             display: block;
             width: 100%;
-            max-width: 450px;
-            margin: 60px auto;
-            padding: 22px;
-            background-color: var(--accent-color);
-            color: #000000;
+            max-width: 400px;
+            margin: 80px auto 0 auto;
+            padding: 20px;
+            background-color: var(--heading-color);
+            color: #ffffff;
             text-align: center;
             text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            border-radius: 4px;
-            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-size: 13px;
+            font-weight: 400;
+            border-radius: 0; /* Bordas retas, corte de alfaiataria */
+            border: 1px solid var(--heading-color);
+            transition: all 0.4s ease;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            letter-spacing: 2px;
         }
 
         .cta-button:hover {
-            background-color: #d4d4d4;
-            transform: translateY(-2px);
+            background-color: transparent;
+            color: var(--heading-color);
         }
 
         @media (max-width: 600px) {
             .hook-phrase {
-                font-size: 20px;
+                font-size: 22px;
             }
             h1 {
                 font-size: 28px;
             }
-            p, li, .highlight-box p {
+            p, li {
                 font-size: 16px;
+            }
+            .highlight-box p {
+                font-size: 17px;
             }
         }
     </style>
@@ -137,6 +148,7 @@
 
     <main class="container">
         
+        <!-- FRASE DE IMPACTO (HOOK) -->
         <div class="hook-phrase">
             "Você entraria num avião em que o piloto aprendeu a voar apenas lendo um livro?"
         </div>
@@ -144,7 +156,7 @@
         <h1>Seja atendido ainda hoje por um psiquiatra de verdade. Sem sair de casa.</h1>
 
         <div class="highlight-box">
-            <p><strong>Um compromisso inegociável:</strong> Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
+            <p>Um compromisso inegociável: Toda a nossa equipe é composta exclusivamente por psiquiatras de verdade. Você será atendido estritamente por médicos com Registro de Qualificação de Especialidade (RQE) ativo. Sem exceções. Sem intermediários.</p>
         </div>
 
         <p>Se você está enfrentando insônia crônica, ansiedade paralisante ou depressão, você precisa de um psiquiatra de verdade, não de um "especialista em saúde mental" ou um "especialista em psiquiatria".</p>
@@ -159,4 +171,26 @@
 
         <p>O Registro de Qualificação de Especialidade (RQE) não é um detalhe burocrático. É a prova matemática e legal de que o profissional à sua frente investiu seis anos em uma faculdade de medicina, completou anos de uma residência médica exaustiva em hospitais psiquiátricos e foi rigorosamente preparado.</p>
 
-        <p>Um psiquiatra com RQE não adivinha. Ele não oferece "mentorias de
+        <p>Um psiquiatra com RQE não adivinha. Ele não oferece "mentorias de bem-estar". Ele diagnostica com base em fisiologia, neuroquímica e evidências clínicas. Como toda a equipe é psiquiatra de verdade, o rigor é absoluto. Se o profissional não possui este registro, ele não é um psiquiatra. É simples assim.</p>
+
+        <h2>Sem sala de espera.</h2>
+
+        <p>A dor mental não agenda horário para o mês que vem. Quando a crise ataca, você precisa de um médico agora, não daqui a sessenta dias.</p>
+
+        <p>Foi exatamente para resolver este problema crônico que desenvolvemos este serviço de telemedicina psiquiátrica imediata. O funcionamento é notavelmente simples, direto e eficaz:</p>
+
+        <ul>
+            <li><strong>Acesso Imediato e Nacional:</strong> Você solicita o atendimento de onde estiver, em qualquer lugar do Brasil, sem enfrentar trânsito ou salas de espera constrangedoras.</li>
+            <li><strong>Apenas Especialistas Comprovados:</strong> Toda a nossa equipe é psiquiatra de verdade. Você é conectado, por videochamada, exclusivamente a um médico com RQE verificado.</li>
+            <li><strong>Resolução Completa:</strong> Você recebe um tratamento de verdade. Caso necessário, a prescrição médica digital (válida em qualquer farmácia do país) e outros documentos são enviados diretamente para o seu celular.</li>
+        </ul>
+
+        <p>Tudo isso com o absoluto sigilo que o seu próprio quarto ou escritório oferecem.</p>
+
+        <p>Não arrisque a sua mente e a sua vida com conselheiros de internet. O tratamento sério, conduzido por médicos de verdade, está a um clique de distância.</p>
+
+        <a href="https://wa.me/5511977335683?text=OL%C3%81%2C%20DESEJO%20AGENDAR%20ATENDIMENTO" class="cta-button" target="_blank">Agendar Consulta com Especialista Agora</a>
+    </main>
+
+</body>
+</html>
