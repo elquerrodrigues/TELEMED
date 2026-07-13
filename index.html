@@ -30,6 +30,23 @@
             box-sizing: border-box;
         }
 
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+
+        .hook-phrase {
+            font-size: 24px;
+            font-style: italic;
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 50px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
         h1 {
             font-size: 38px;
             line-height: 1.2;
@@ -107,11 +124,19 @@
         }
 
         @media (max-width: 600px) {
+            .hook-phrase {
+                font-size: 20px;
+            }
             h1 {
                 font-size: 28px;
             }
             p, li, .highlight-box p {
                 font-size: 16px;
+            }
+            .video-container iframe {
+                max-width: 100%;
+                height: auto;
+                aspect-ratio: 1 / 2;
             }
         }
     </style>
@@ -119,6 +144,17 @@
 <body>
 
     <main class="container">
+        
+        <!-- ÁREA DO VÍDEO DO PINTEREST -->
+        <div class="video-container">
+            <iframe src="https://assets.pinterest.com/ext/embed.html?id=844073155192156127" height="900" width="450" frameborder="0" scrolling="no"></iframe>
+        </div>
+        
+        <!-- FRASE DE IMPACTO (HOOK) -->
+        <div class="hook-phrase">
+            "Você entraria num avião em que o piloto aprendeu a voar apenas lendo um livro?"
+        </div>
+
         <h1>Seja atendido ainda hoje por um psiquiatra de verdade. Sem sair de casa.</h1>
 
         <div class="highlight-box">
@@ -157,6 +193,9 @@
 
         <a href="https://wa.me/5511977335683?text=OL%C3%81%2C%20DESEJO%20AGENDAR%20ATENDIMENTO" class="cta-button" target="_blank">Agendar Consulta com Especialista Agora</a>
     </main>
+
+    <!-- Script necessário para o Pinterest Embed funcionar corretamente -->
+    <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 
 </body>
 </html>
