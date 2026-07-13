@@ -13,6 +13,10 @@
     --white:#fff;
 }
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
@@ -24,14 +28,12 @@ body{
 }
 
 .container{
-
     max-width:760px;
     margin:auto;
     padding:80px 24px;
 }
 
 .hook{
-
     font-size:22px;
     font-style:italic;
     text-align:center;
@@ -40,142 +42,107 @@ body{
 }
 
 h1{
-
     font-size:42px;
     line-height:1.2;
     text-align:center;
-    margin-bottom:20px;
+    margin-bottom:30px;
+    color:white;
+}
+
+.quick-info{
+    text-align:center;
+    font-size:17px;
+    line-height:2;
+    margin-bottom:40px;
     color:white;
 }
 
 .cta{
-
-display:block;
-
-max-width:430px;
-
-margin:40px auto;
-
-padding:22px;
-
-background:white;
-
-color:black;
-
-text-decoration:none;
-
-text-align:center;
-
-font-weight:700;
-
-font-size:18px;
-
-border-radius:4px;
-
-letter-spacing:.5px;
-
-transition:.2s;
+    display:block;
+    max-width:430px;
+    margin:40px auto;
+    padding:22px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    text-align:center;
+    font-weight:700;
+    font-size:18px;
+    border-radius:4px;
+    letter-spacing:.5px;
+    transition:.2s;
 }
 
 .cta:hover{
-
-transform:translateY(-2px);
-
+    transform:translateY(-2px);
 }
 
 .highlight{
-
-margin:50px 0;
-
-padding:28px;
-
-border-left:4px solid white;
-
-background:rgba(0,0,0,.35);
-
-backdrop-filter:blur(5px);
-
+    margin:50px 0;
+    padding:28px;
+    border-left:4px solid white;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(5px);
 }
 
 .highlight p{
-
-margin:0;
-
-font-size:20px;
-
-color:white;
-
+    margin:0;
+    font-size:20px;
+    color:white;
 }
 
 h2{
-
-margin-top:60px;
-
-font-size:28px;
-
-color:white;
-
+    margin-top:60px;
+    font-size:28px;
+    color:white;
 }
 
 p{
-
-font-size:18px;
-
-line-height:1.8;
-
-margin-bottom:22px;
-
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:22px;
 }
 
 .steps{
-
-margin:40px 0;
-
-padding:0;
-
-list-style:none;
-
+    margin:40px 0;
+    padding:0;
+    list-style:none;
 }
 
 .steps li{
-
-margin-bottom:18px;
-
-font-size:18px;
-
+    margin-bottom:24px;
+    font-size:18px;
 }
 
 .steps strong{
-
-display:block;
-
-font-size:19px;
-
-color:white;
-
-margin-bottom:4px;
-
+    display:block;
+    font-size:19px;
+    color:white;
+    margin-bottom:6px;
 }
 
 @media(max-width:600px){
 
-h1{
+    .container{
+        padding:60px 22px;
+    }
 
-font-size:31px;
+    h1{
+        font-size:31px;
+    }
 
-}
+    .hook{
+        font-size:19px;
+    }
 
-.hook{
+    .quick-info{
+        font-size:16px;
+    }
 
-font-size:19px;
-
-}
-
-p,.steps li{
-
-font-size:16px;
-
-}
+    p,
+    .steps li{
+        font-size:16px;
+    }
 
 }
 
@@ -189,16 +156,25 @@ font-size:16px;
 
 <div class="hook">
 
-"Você entraria em um avião cujo piloto aprendeu a voar apenas lendo um livro?"
+Sua saúde mental merece um médico especialista.
 
 </div>
 
 <h1>
 
-Seja atendido ainda hoje por um psiquiatra de verdade.<br>
+Atendimento realizado exclusivamente por médicos psiquiatras especialistas.<br>
 Sem sair de casa.
 
 </h1>
+
+<div class="quick-info">
+
+✓ Atendimento em todo o Brasil<br>
+✓ Consulta por vídeo<br>
+✓ Receita médica digital<br>
+✓ Médicos psiquiatras especialistas (RQE)
+
+</div>
 
 <a class="cta"
 href="https://wa.me/5511977335683?text=OL%C3%81%2C%20DESEJO%20AGENDAR%20ATENDIMENTO">
@@ -213,9 +189,7 @@ AGENDAR CONSULTA AGORA
 
 <strong>Compromisso inegociável:</strong>
 
-Toda a equipe é formada exclusivamente por médicos psiquiatras com Registro de Qualificação de Especialidade (RQE) ativo.
-
-Sem exceções.
+Equipe formada exclusivamente por médicos psiquiatras com Registro de Qualificação de Especialidade (RQE) ativo.
 
 </p>
 
@@ -223,13 +197,13 @@ Sem exceções.
 
 <p>
 
-Ansiedade intensa, insônia, depressão e crises emocionais exigem avaliação médica adequada. O tratamento começa com um diagnóstico correto, realizado por quem foi treinado durante anos para isso.
+Ansiedade intensa, crises de pânico, insônia, depressão e outras alterações emocionais podem tornar até as tarefas mais simples muito difíceis. Procurar ajuda pode ser o primeiro passo para voltar a viver com tranquilidade.
 
 </p>
 
 <p>
 
-Hoje existe muita informação sobre saúde mental, mas informação não substitui formação médica. Antes de iniciar qualquer tratamento, confirme se o profissional possui RQE em Psiquiatria.
+O tratamento começa com um diagnóstico correto. Por isso, antes de iniciar qualquer acompanhamento, confirme se o médico possui Registro de Qualificação de Especialidade (RQE) em Psiquiatria.
 
 </p>
 
@@ -251,9 +225,9 @@ Clique no botão e fale conosco pelo WhatsApp.
 
 <li>
 
-<strong>2. Consulte um psiquiatra com RQE</strong>
+<strong>2. Consulte um médico psiquiatra especialista</strong>
 
-Você realiza a consulta por vídeo, de qualquer lugar do Brasil.
+A consulta é realizada por vídeo, com conforto, privacidade e segurança, de qualquer lugar do Brasil.
 
 </li>
 
@@ -261,7 +235,7 @@ Você realiza a consulta por vídeo, de qualquer lugar do Brasil.
 
 <strong>3. Receba todo o tratamento</strong>
 
-Receita digital, atestados e demais documentos são enviados diretamente para você, quando indicados.
+Receitas digitais, atestados e demais documentos médicos são enviados diretamente para você, quando indicados.
 
 </li>
 
@@ -275,7 +249,7 @@ Por que exigir RQE?
 
 <p>
 
-O Registro de Qualificação de Especialidade comprova que o médico concluiu sua formação em Psiquiatria e está oficialmente habilitado para exercer a especialidade.
+O Registro de Qualificação de Especialidade (RQE) comprova que o médico concluiu sua formação em Psiquiatria e está oficialmente habilitado para exercer a especialidade.
 
 </p>
 
@@ -287,7 +261,7 @@ Quando se trata da sua saúde mental, essa diferença importa.
 
 <p>
 
-Você merece ser atendido por um médico preparado, com segurança, sigilo e responsabilidade.
+Você merece um atendimento realizado com conhecimento, responsabilidade, sigilo e segurança.
 
 </p>
 
